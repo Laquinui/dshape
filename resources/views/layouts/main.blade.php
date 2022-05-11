@@ -7,6 +7,9 @@
 
     {{-- BOOTSTRAP --}}
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+
+    {{-- CSS --}}
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
     <title>DShape</title>
 </head>
 <body>
