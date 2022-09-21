@@ -7,10 +7,15 @@ use Illuminate\Support\Facades\Route;
 // Get - retornar coisas, vizual
 // Post - mandar coisas
 
-// //Quando acessar "/" retornar arquivo Landingpage                                                              
-// Route::get('/', function () {
-//     return view('landingpage');
-// });
+//Quando acessar "/" retornar arquivo Landingpage                                                              
+Route::get('/', function () {
+    return view('landingpage');
+});
+
+//Quando acessar "/" retornar arquivo Landingpage                                                              
+Route::get('/home', function () {
+    return view('/measurements/home');
+});
 
 //Quando acessar "/measurements" retornar arquivo List  
 Route::get('/measurements', [MeasurementsController::class, 'index']);
@@ -33,14 +38,14 @@ Route::put('/measurements/{id}', [MeasurementsController::class, 'update']);
 Route::get('/measurements/{id}', [MeasurementsController::class, 'show']);
 
 
-// // -- ÁREA DE LOGIN
-//     //Quando acessar "/login" retornar arquivo Login 
-//     Route::get('/login', function (){
-//         return view('/auth/login');
-//     });
+// -- ÁREA DE LOGIN
+    //Quando acessar "/login" retornar arquivo Login 
+    Route::get('/login', function (){
+        return view('/auth/login');
+    });
 
-//     //Quando acessar "/register" retornar arquivo Register 
-//     Route::get('/register', function (){
-//         return view('/auth/register');
-//     });
-// // -- fIM DA ÁREA DE LOGIN
+    //Quando acessar "/register" retornar arquivo Register 
+    Route::get('/register', function (){
+        return view('/auth/register');
+    });
+// -- fIM DA ÁREA DE LOGIN
