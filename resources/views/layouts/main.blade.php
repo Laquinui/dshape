@@ -7,6 +7,7 @@
 
     {{-- BOOTSTRAP --}}
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> --}}
 
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
@@ -17,7 +18,10 @@
     @yield('container')
 
     {{-- BOOTSTRAP --}}
-    <style href="{{ asset('/js/bootstrap.min.js') }}"></style>
-    <style href="{{ asset('/js/popper.min.js') }}"></style>
+    <script src="{{ asset('/js/popper.min.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/js/script.js') }}"></script>
+
+    
 </body>
 </html>
