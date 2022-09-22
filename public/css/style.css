@@ -99,6 +99,26 @@ body{
     height: auto;
 }
 
+/* -area de comentários- */
+#carouselUsers{
+    height: 200px;
+}
+
+#carouselUsers .card{
+    width: 500px !important;
+    height: 150px !important;
+    background-color: var(--secundary-dark);
+}
+
+#carouselUsers .card .card-header{
+    background-color: inherit;
+    border-bottom: none;
+}
+
+#carouselUsers .card .card-body{
+    padding-top: 0px;
+}
+
 /* -area de login- */
 #login-area{
     height: 100vh;
@@ -111,6 +131,16 @@ body{
     background-color: var(--darker);
     color: var(--white);
     width: 500px;
+}
+
+.card-login .card-body a{
+    color: var(--primary);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.card-login .card-body a:hover{
+    color: var(--secundary-dark);
 }
 
 .input-login{
@@ -135,4 +165,14 @@ body{
 
 .label-login{
     color: var(--black);
+}
+
+#login-area .dshape-logo{
+    max-width: 150px;
+    height: auto;
+    transition: .2s;
+}
+
+#login-area .dshape-logo:hover{
+    transform: scale(1.1);
 }
