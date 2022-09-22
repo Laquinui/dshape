@@ -80,10 +80,65 @@
 </div>
 
 {{-- ÁREA DE COMENTÁRIOS --}}
-<div class="container-fluid" style="background-color: var(--white);" id="comment-area">
-    <div class="row">
-        
-    </div>
+<div class="container-fluid mt-3" style="background-color: var(--white);" id="comment-area">
+    <div id="carouselUsers" class="carousel carousel-dark slide" data-bs-ride="true">
+        <div class="carousel-inner p-4">
+          <div class="carousel-item active">
+            <div class="d-block w-100 card text-center mx-auto">
+                <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Usuário</h5>
+                    <p class="card-text">
+                        É um excelente site! Sempre me ajuda muito na minha rotina diária
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 card text-center mx-auto">
+                <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Usuário</h5>
+                    <p class="card-text">
+                        Meh, legalzinho vai, o único ponto positivo é que o site é bonito
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-block w-100 card text-center mx-auto">
+                <div class="card-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Usuário</h5>
+                    <p class="card-text">Acabou a minha criatividade Fernandinho</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselUsers" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselUsers" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </div>
 
 {{-- LOGIN --}}
